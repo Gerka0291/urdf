@@ -1,0 +1,94 @@
+<robot name="rukaURDF" version="1.0">
+  <joint name="1platform_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="1.00000" velocity="1.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.93091 1.08481 0.32909"/>
+    <parent link="base_link0"/>
+    <child link="platform_link0"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="2link_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="1.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.92668 1.98462 0.05671"/>
+    <parent link="platform_link0"/>
+    <child link="link_link0"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="3link_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="1.00000" velocity="1.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="-1.29037 3.21921 0.02158"/>
+    <parent link="link_link0"/>
+    <child link="link_link3"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="4link_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="1.00000" velocity="1.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-3.92261 -0.57739 0.05857"/>
+    <parent link="link_link3"/>
+    <child link="link_link4"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="5grip_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="1.00000" velocity="1.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-1.17227 0.18011 0.01967"/>
+    <parent link="link_link4"/>
+    <child link="grip_link5"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <link name="base_link0">
+    <visual name="0base">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.007.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="grip_link5">
+    <visual name="5grip">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.012.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_link0">
+    <visual name="2link">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00000 0.00000 -0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.009.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_link3">
+    <visual name="3link">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.010.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_link4">
+    <visual name="4link">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.011.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="platform_link0">
+    <visual name="1platform">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.008.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Material">
+    <color rgba="0.21176 0.24706 0.26275 1.00000"/>
+  </material>
+</robot>
