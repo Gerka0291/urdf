@@ -7,21 +7,21 @@
     <axis xyz="1.00000 0.00000 0.00000"/>
   </joint>
   <joint name="link1_link_joint" type="revolute">
-    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <limit lower="-2.00000" upper="2.00000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-0.92668 1.98462 0.05671"/>
     <parent link="platform_link"/>
     <child link="link1_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <joint name="link2_link_joint" type="revolute">
-    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <limit lower="-2.00000" upper="2.00000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-1.29037 3.21921 0.02158"/>
     <parent link="link1_link"/>
     <child link="link2_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <joint name="link3_link_joint" type="revolute">
-    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <limit lower="-2.00000" upper="2.00000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-3.92261 -0.57739 0.05857"/>
     <parent link="link2_link"/>
     <child link="link3_link"/>
@@ -74,6 +74,12 @@
     </visual>
   </link>
   <link name="link2_link">
+    <collision name="link2_collision">
+      <origin rpy="-0.00000 1.57080 0.00000" xyz="-1.92910 -0.26282 0.03145"/>
+      <geometry>
+        <cylinder radius="0.73101" length="4.80740"/>
+      </geometry>
+    </collision>
     <visual name="link2">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="Material"/>
