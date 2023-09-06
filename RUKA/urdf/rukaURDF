@@ -1,5 +1,5 @@
 <robot name="rukaURDF" version="1.0">
-  <joint name="1platform_link_joint" type="revolute">
+  <joint name="1platform_link_joint" type="fixed">
     <limit lower="-1.00000" upper="1.00000" effort="1.00000" velocity="1.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-0.93091 1.08481 0.32909"/>
     <parent link="base_link0"/>
