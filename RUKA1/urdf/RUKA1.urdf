@@ -1,0 +1,112 @@
+<robot name="RUKA1" version="1.0">
+  <joint name="grip_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-1.17227 0.18011 0.01967"/>
+    <parent link="link3_link"/>
+    <child link="grip_link"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="link1_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.92668 1.98462 0.05671"/>
+    <parent link="platform_link"/>
+    <child link="link1_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="link2_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-1.29037 3.21921 0.02158"/>
+    <parent link="link1_link"/>
+    <child link="link2_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="link3_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-3.92261 -0.57739 0.05857"/>
+    <parent link="link2_link"/>
+    <child link="link3_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="platform_link_joint" type="revolute">
+    <limit lower="-1.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.93091 1.08481 0.32909"/>
+    <parent link="base_link"/>
+    <child link="platform_link"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <link name="base_link">
+    <collision name="base_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.54250 -0.00000"/>
+      <geometry>
+        <box size="5.48699 1.08500 6.76599"/>
+      </geometry>
+    </collision>
+    <visual name="base">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.007.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="grip_link">
+    <collision name="grip_collision">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.33317 0.05097 0.00696"/>
+      <geometry>
+        <box size="0.95576 0.86854 1.12427"/>
+      </geometry>
+    </collision>
+    <visual name="grip">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.012.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link1_link">
+    <visual name="link1">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.009.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link2_link">
+    <visual name="link2">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.010.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link3_link">
+    <visual name="link3">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.011.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="platform_link">
+    <collision name="platform_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00074 0.91479 -0.00000"/>
+      <geometry>
+        <box size="2.74311 1.83306 2.74163"/>
+      </geometry>
+    </collision>
+    <visual name="platform">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Material"/>
+      <geometry>
+        <mesh filename="../meshes/stl/ruka.008.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Material">
+    <color rgba="0.21176 0.24706 0.26275 1.00000"/>
+  </material>
+</robot>
