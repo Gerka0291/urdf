@@ -109,7 +109,7 @@
   <link name="head_steel_link">
     <visual name="head_plast">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.32502 0.00500"/>
-      <material name="white"/>
+      <material name="whiteHead"/>
       <geometry>
         <mesh filename="../meshes/stl/head_white.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
@@ -210,7 +210,7 @@
   <link name="leftArm5_plast_link">
     <visual name="leftArm5_plast">
       <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
-      <material name="black"/>
+      <material name="blackLa"/>
       <geometry>
         <mesh filename="../meshes/stl/LAP5.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
@@ -327,7 +327,7 @@
   <link name="rightArm5_red_link">
     <visual name="rightArm5_plast">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
-      <material name="black"/>
+      <material name="blackRarm"/>
       <geometry>
         <mesh filename="../meshes/stl/RAP5.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
@@ -343,6 +343,12 @@
   <material name="black">
     <color rgba="0.01569 0.01569 0.01569 1.00000"/>
   </material>
+  <material name="blackLa">
+    <color rgba="0.01569 0.01569 0.01569 1.00000"/>
+  </material>
+  <material name="blackRarm">
+    <color rgba="0.01569 0.01569 0.01569 1.00000"/>
+  </material>
   <material name="red">
     <color rgba="0.80000 0.00000 0.00000 1.00000"/>
   </material>
@@ -350,6 +356,9 @@
     <color rgba="0.21569 0.21569 0.21569 1.00000"/>
   </material>
   <material name="white">
+    <color rgba="1.00000 1.00000 1.00000 1.00000"/>
+  </material>
+  <material name="whiteHead">
     <color rgba="1.00000 1.00000 1.00000 1.00000"/>
   </material>
 </robot>
