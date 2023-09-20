@@ -84,6 +84,12 @@
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <link name="body0_plast_white_link">
+    <collision name="body0_plast_white_collision">
+      <origin rpy="3.14159 0.00000 3.14159" xyz="0.25738 13.34905 0.00012"/>
+      <geometry>
+        <box size="7.90146 11.50936 13.78356"/>
+      </geometry>
+    </collision>
     <visual name="body0_plast_white">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="white"/>
@@ -107,6 +113,12 @@
     </visual>
   </link>
   <link name="head_steel_link">
+    <collision name="head_plast_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.22056 4.52544 0.00490"/>
+      <geometry>
+        <box size="4.85000 7.60360 10.34980"/>
+      </geometry>
+    </collision>
     <visual name="head_plast">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.32502 0.00500"/>
       <material name="whiteHead"/>
@@ -208,6 +220,12 @@
     </visual>
   </link>
   <link name="leftArm5_plast_link">
+    <collision name="leftArm5_plast_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 -1.16249"/>
+      <geometry>
+        <box size="2.00002 1.00000 2.27000"/>
+      </geometry>
+    </collision>
     <visual name="leftArm5_plast">
       <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <material name="blackLa"/>
@@ -325,6 +343,12 @@
     </visual>
   </link>
   <link name="rightArm5_red_link">
+    <collision name="rightArm5_plast_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.29650 -0.00000 1.45934"/>
+      <geometry>
+        <box size="2.40701 1.08017 2.52897"/>
+      </geometry>
+    </collision>
     <visual name="rightArm5_plast">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="blackRarm"/>
