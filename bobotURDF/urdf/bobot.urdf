@@ -84,18 +84,6 @@
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <link name="body0_plast_white_link">
-    <collision name="body0_plast_white_collision">
-      <origin rpy="3.14159 0.00000 3.14159" xyz="0.25738 16.71443 0.00012"/>
-      <geometry>
-        <box size="7.90146 5.05599 13.78356"/>
-      </geometry>
-    </collision>
-    <collision name="body0_plast_white_collision.001">
-      <origin rpy="0.00000 0.00000 3.14159" xyz="0.25738 10.60920 0.00012"/>
-      <geometry>
-        <box size="7.90146 6.90555 11.75249"/>
-      </geometry>
-    </collision>
     <visual name="body0_plast_white">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="white"/>
@@ -119,10 +107,10 @@
     </visual>
   </link>
   <link name="head_steel_link">
-    <collision name="head_plast_collision">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.22056 4.52544 0.00490"/>
+    <collision name="head_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 4.61031 0.00500"/>
       <geometry>
-        <box size="4.85000 7.60360 10.34980"/>
+        <mesh filename="../meshes/stl/Cube.004.stl" scale="0.77813 1.10000 1.56125"/>
       </geometry>
     </collision>
     <visual name="head_plast">
