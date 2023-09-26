@@ -84,12 +84,6 @@
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <link name="body0_plast_white_link">
-    <collision name="body0_plast_white_collision">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
-      <geometry>
-        <mesh filename="../meshes/stl/body_white.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </collision>
     <visual name="body0_plast_white">
       <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="white"/>
