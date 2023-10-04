@@ -87,13 +87,13 @@
     <collision name="body0_coll_big">
       <origin rpy="0.00000 0.00000 0.00000" xyz="-0.09935 9.56619 0.00012"/>
       <geometry>
-        <box size="11.09341 23.58187 14.33216"/>
+        <mesh filename="../meshes/stl/Cube.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </collision>
     <collision name="body0_coll_small">
       <origin rpy="0.00000 0.00000 0.00000" xyz="-0.09935 9.79751 0.00012"/>
       <geometry>
-        <box size="10.21537 21.71539 13.19779"/>
+        <mesh filename="../meshes/stl/Cube.006.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </collision>
     <visual name="body0_plast_white">
