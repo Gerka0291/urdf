@@ -1,3 +1,0 @@
-Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("head_steel") at 0x00000295AF834108>, meshname=head_steel, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("head_steel") at 0x00000295AF834108> to C:\Users\Hasee\Desktop\LA\3dModel\bobot\bobotURDF\meshes\stl\head_steel.stl
-->wrote stl to C:\Users\Hasee\Desktop\LA\3dModel\bobot\bobotURDF\meshes\stl\head_steel.stl from bpy_types.Mesh
