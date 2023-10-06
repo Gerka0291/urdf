@@ -126,7 +126,7 @@
       </geometry>
     </collision>
     <collision name="head_coll_small">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 4.61031 0.00500"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 4.39291 0.00500"/>
       <geometry>
         <mesh filename="../meshes/stl/Cube.001.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>

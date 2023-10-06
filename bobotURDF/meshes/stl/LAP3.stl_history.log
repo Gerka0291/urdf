@@ -1,3 +1,3 @@
-Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("LAP3") at 0x0000018CEC8B5608>, meshname=LAP3, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("LAP3") at 0x0000018CEC8B5608> to C:\Users\Hasee\Desktop\LA\3dModel\bobot\bobotURDF\meshes\stl\LAP3.stl
+Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("LAP3") at 0x00000295AF825608>, meshname=LAP3, material=None, mesh_orientation=None, {}
+->trying export of <bpy_struct, Mesh("LAP3") at 0x00000295AF825608> to C:\Users\Hasee\Desktop\LA\3dModel\bobot\bobotURDF\meshes\stl\LAP3.stl
 ->wrote stl to C:\Users\Hasee\Desktop\LA\3dModel\bobot\bobotURDF\meshes\stl\LAP3.stl from bpy_types.Mesh
