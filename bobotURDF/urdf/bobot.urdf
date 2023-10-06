@@ -120,7 +120,7 @@
   </link>
   <link name="head_steel_link">
     <collision name="head_coll_big">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 4.61031 0.00500"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.28471 4.38254 0.00500"/>
       <geometry>
         <mesh filename="../meshes/stl/Cube.004.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
