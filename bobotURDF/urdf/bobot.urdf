@@ -48,6 +48,13 @@
     <child link="neck_plast_link"/>
     <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
+  <joint name="rArmEff_Link" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 2.29749"/>
+    <parent link="rightArm5_red_link"/>
+    <child link="Armature"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
   <joint name="rightArm1_link_joint" type="revolute">
     <limit lower="-0.26000" upper="3.10000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 17.49999 6.17249"/>
@@ -83,6 +90,14 @@
     <child link="rightArm5_red_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
+  <link name="Armature">
+    <visual name="rArmEffjoint">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Cube.001.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
   <link name="body0_plast_white_link">
     <collision name="body0_coll_big">
       <origin rpy="0.00000 0.00000 0.00000" xyz="-0.09935 9.56619 0.00012"/>
