@@ -21,7 +21,7 @@
     <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="leftArm1_plast_joint" type="revolute">
-    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
+    <limit lower="-1.83000" upper="1.83000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 17.49999 -6.17249"/>
     <parent link="body0_plast_white_link"/>
     <child link="leftArm1_plast_link"/>
