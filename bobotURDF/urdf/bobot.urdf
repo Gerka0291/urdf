@@ -6,6 +6,13 @@
     <child link="HeadEff_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
+  <joint name="head_steel_Joint" type="revolute">
+    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.90250 -0.00500"/>
+    <parent link="neck_plast_link"/>
+    <child link="head_steel_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
   <joint name="lArmEff_joint" type="revolute">
     <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 -2.89749"/>
@@ -54,13 +61,6 @@
     <parent link="body0_plast_white_link"/>
     <child link="neck_plast_link"/>
     <axis xyz="0.00000 1.00000 0.00000"/>
-  </joint>
-  <joint name="rArmEff_Link" type="revolute">
-    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.90250 -0.00500"/>
-    <parent link="neck_plast_link"/>
-    <child link="head_steel_link"/>
-    <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <joint name="rArmEff_joint" type="revolute">
     <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
