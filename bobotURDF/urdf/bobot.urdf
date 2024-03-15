@@ -1,13 +1,20 @@
 <robot name="bobot" version="1.0">
-  <joint name="head_steel_link_joint" type="revolute">
-    <limit lower="-0.70000" upper="0.70000" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.90250 -0.00500"/>
-    <parent link="neck_plast_link"/>
-    <child link="head_steel_link"/>
+  <joint name="HeadEff_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="2.10444 3.65079 0.00500"/>
+    <parent link="head_steel_link"/>
+    <child link="HeadEff_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
-  <joint name="leftArm1_plast_link_joint" type="revolute">
-    <limit lower="-0.26000" upper="3.40000" effort="0.00000" velocity="0.00000"/>
+  <joint name="lArmEff_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 -2.89749"/>
+    <parent link="leftArm5_plast_link"/>
+    <child link="lArmEff_link"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="leftArm1_plast_joint" type="revolute">
+    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 17.49999 -6.17249"/>
     <parent link="body0_plast_white_link"/>
     <child link="leftArm1_plast_link"/>
@@ -27,8 +34,8 @@
     <child link="leftArm3_plast_link"/>
     <axis xyz="1.00000 0.00000 0.00000"/>
   </joint>
-  <joint name="leftArm4_link_joint" type="revolute">
-    <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
+  <joint name="leftArm4_Joint" type="revolute">
+    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 -3.20000"/>
     <parent link="leftArm3_plast_link"/>
     <child link="leftArm4_link"/>
@@ -49,10 +56,17 @@
     <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="rArmEff_Link" type="revolute">
+    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.90250 -0.00500"/>
+    <parent link="neck_plast_link"/>
+    <child link="head_steel_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rArmEff_joint" type="revolute">
     <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 2.29749"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 2.89749"/>
     <parent link="rightArm5_red_link"/>
-    <child link="Armature"/>
+    <child link="rArmEff_link"/>
     <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="rightArm1_link_joint" type="revolute">
@@ -90,11 +104,11 @@
     <child link="rightArm5_red_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
-  <link name="Armature">
-    <visual name="rArmEffjoint">
-      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+  <link name="HeadEff_link">
+    <visual name="headEffCube">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <geometry>
-        <mesh filename="../meshes/stl/Cube.001.stl" scale="1.00000 1.00000 1.00000"/>
+        <mesh filename="../meshes/stl/Cube.040.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
@@ -153,6 +167,15 @@
       <material name="steel"/>
       <geometry>
         <mesh filename="../meshes/stl/head_steel.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="lArmEff_link">
+    <visual name="lEndEffCube">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="blackLa"/>
+      <geometry>
+        <mesh filename="../meshes/stl/LAP5.001.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
@@ -270,6 +293,14 @@
       <material name="steel"/>
       <geometry>
         <mesh filename="../meshes/stl/NS.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rArmEff_link">
+    <visual name="rEndEffCube">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Cube.001.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
