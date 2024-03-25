@@ -7,7 +7,7 @@
     <axis xyz="0.00000 0.00000 1.00000"/>
   </joint>
   <joint name="head_steel_Joint" type="revolute">
-    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
+    <limit lower="-0.50000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.90250 -0.00500"/>
     <parent link="neck_plast_link"/>
     <child link="head_steel_link"/>
@@ -15,7 +15,7 @@
   </joint>
   <joint name="lArmEff_joint" type="revolute">
     <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 -2.89749"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.50000 -2.89749"/>
     <parent link="leftArm5_plast_link"/>
     <child link="lArmEff_link"/>
     <axis xyz="0.00000 1.00000 0.00000"/>
@@ -29,28 +29,28 @@
   </joint>
   <joint name="leftArm2_plast_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00500 -1.87501"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00500 -0.00000 -1.87501"/>
     <parent link="leftArm1_plast_link"/>
     <child link="leftArm2_plast_link"/>
-    <axis xyz="1.00000 0.00000 0.00000"/>
+    <axis xyz="0.00000 -1.00000 0.00000"/>
   </joint>
   <joint name="leftArm3_plast_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -3.20000"/>
     <parent link="leftArm2_plast_link"/>
     <child link="leftArm3_plast_link"/>
-    <axis xyz="1.00000 0.00000 0.00000"/>
+    <axis xyz="0.00000 -1.00000 0.00000"/>
   </joint>
   <joint name="leftArm4_Joint" type="revolute">
-    <limit lower="-0.05480" upper="0.05480" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 -3.20000"/>
+    <limit lower="-1.83000" upper="1.83000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 -3.20000"/>
     <parent link="leftArm3_plast_link"/>
     <child link="leftArm4_link"/>
-    <axis xyz="1.00000 0.00000 0.00000"/>
+    <axis xyz="0.00000 -1.00000 0.00000"/>
   </joint>
   <joint name="leftArm5_plast_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00500 -0.00000 -1.32502"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00500 -1.32502"/>
     <parent link="leftArm4_link"/>
     <child link="leftArm5_plast_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
@@ -64,13 +64,13 @@
   </joint>
   <joint name="rArmEff_joint" type="revolute">
     <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.50000 0.00000 2.89749"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.50000 2.89749"/>
     <parent link="rightArm5_red_link"/>
     <child link="rArmEff_link"/>
     <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="rightArm1_link_joint" type="revolute">
-    <limit lower="-0.26000" upper="3.10000" effort="0.00000" velocity="0.00000"/>
+    <limit lower="-1.83000" upper="1.83000" effort="0.00000" velocity="0.00000"/>
     <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 17.49999 6.17249"/>
     <parent link="body0_plast_white_link"/>
     <child link="rightArm1_steel_link"/>
@@ -78,28 +78,28 @@
   </joint>
   <joint name="rightArm2_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00500 0.00000 1.87501"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00500 1.87501"/>
     <parent link="rightArm1_steel_link"/>
     <child link="rightArm2_steel_link"/>
-    <axis xyz="1.00000 0.00000 0.00000"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="rightArm3_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 3.20000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 3.20000"/>
     <parent link="rightArm2_steel_link"/>
     <child link="rightArm3_steel_link"/>
-    <axis xyz="1.00000 0.00000 0.00000"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="rightArm4_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 3.19999"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 3.19999"/>
     <parent link="rightArm3_steel_link"/>
     <child link="rightArm4_link"/>
-    <axis xyz="1.00000 0.00000 0.00000"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
   </joint>
   <joint name="rightArm5_plast_link_joint" type="revolute">
     <limit lower="-1.83400" upper="1.83400" effort="0.00000" velocity="0.00000"/>
-    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00500 0.00000 1.32502"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00500 1.32502"/>
     <parent link="rightArm4_link"/>
     <child link="rightArm5_red_link"/>
     <axis xyz="0.00000 0.00000 1.00000"/>
@@ -181,21 +181,21 @@
   </link>
   <link name="leftArm1_plast_link">
     <visual name="leftArm1_plast">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
       <material name="black"/>
       <geometry>
         <mesh filename="../meshes/stl/LAP1.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="leftArm1_red">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
       <material name="red"/>
       <geometry>
         <mesh filename="../meshes/stl/LAR1.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="leftArm1_steel">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
       <material name="steel"/>
       <geometry>
         <mesh filename="../meshes/stl/LAS1.stl" scale="1.00000 1.00000 1.00000"/>
@@ -227,21 +227,21 @@
   </link>
   <link name="leftArm3_plast_link">
     <visual name="leftArm3_plast">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="black"/>
       <geometry>
         <mesh filename="../meshes/stl/LAP3.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="leftArm3_red">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <material name="red"/>
       <geometry>
         <mesh filename="../meshes/stl/LAR3.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="leftArm3_steel">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <material name="steel"/>
       <geometry>
         <mesh filename="../meshes/stl/LAS3.stl" scale="1.00000 1.00000 1.00000"/>
@@ -298,7 +298,7 @@
   </link>
   <link name="rArmEff_link">
     <visual name="rEndEffCube">
-      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 1.57080" xyz="-0.00000 0.00000 0.00000"/>
       <geometry>
         <mesh filename="../meshes/stl/Cube.001.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
@@ -306,21 +306,21 @@
   </link>
   <link name="rightArm1_steel_link">
     <visual name="rightArm1_plast">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <material name="black"/>
       <geometry>
         <mesh filename="../meshes/stl/RAP1.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="rightArm1_red">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <material name="red"/>
       <geometry>
         <mesh filename="../meshes/stl/RAR1.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="rightArm1_steel">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <material name="steel"/>
       <geometry>
         <mesh filename="../meshes/stl/RAS1.stl" scale="1.00000 1.00000 1.00000"/>
@@ -352,21 +352,21 @@
   </link>
   <link name="rightArm3_steel_link">
     <visual name="rightArm3_plast">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="black"/>
       <geometry>
         <mesh filename="../meshes/stl/RAP3.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="rightArm3_red">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="red"/>
       <geometry>
         <mesh filename="../meshes/stl/RAR3.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="rightArm3_steel">
-      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
       <material name="steel"/>
       <geometry>
         <mesh filename="../meshes/stl/RAS3.stl" scale="1.00000 1.00000 1.00000"/>
