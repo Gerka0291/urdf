@@ -298,9 +298,9 @@
   </link>
   <link name="rArmEff_link">
     <visual name="rEndEffCube">
-      <origin rpy="0.00000 0.00000 1.57080" xyz="-0.00000 0.00000 0.00000"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
       <geometry>
-        <mesh filename="../meshes/stl/Cube.001.stl" scale="1.00000 1.00000 1.00000"/>
+        <box size="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
