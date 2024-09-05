@@ -1,3 +1,0 @@
-Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("LAR1") at 0x000002B01945EB08>, meshname=LAR1, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("LAR1") at 0x000002B01945EB08> to C:\Users\Hasee\Desktop\LA\3dModel\bobot\patrikFoward\meshes\stl\LAR1.stl
-->wrote stl to C:\Users\Hasee\Desktop\LA\3dModel\bobot\patrikFoward\meshes\stl\LAR1.stl from bpy_types.Mesh
