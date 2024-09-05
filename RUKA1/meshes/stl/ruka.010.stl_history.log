@@ -1,3 +1,0 @@
-Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("ruka.010") at 0x0000024DFB4DCB88>, meshname=ruka.010, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("ruka.010") at 0x0000024DFB4DCB88> to C:\Users\Hasee\Desktop\LA\TST_URDF_parcel\public\RUKA1\meshes\stl\ruka.010.stl
-->wrote stl to C:\Users\Hasee\Desktop\LA\TST_URDF_parcel\public\RUKA1\meshes\stl\ruka.010.stl from bpy_types.Mesh
